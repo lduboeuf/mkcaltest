@@ -9,3 +9,8 @@ mkCal to QtPIM QOrganizer is located in https://github.com/dcaliste/qtorganizer-
 ## debugging: 
  - QT_LOGGING_RULES=*.mkcal.debug=true
  - overriding the default db ( $home/.local/share/system/privileged/Calendar/mkcal/db ) : SQLITESTORAGEDB=/path/to/db
+
+## tests
+
+ - a database could be generated from mkCal tests, e.g https://github.com/sailfishos/mkcal/blob/master/tests/tst_perf.cpp#L48 (just comment the database removals at end of the tests ), this will land in /tmp/db
+   
